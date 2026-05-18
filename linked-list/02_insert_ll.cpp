@@ -17,7 +17,7 @@ Node* insertAtHead(Node * head, int val){
     newNode -> next = head;
     head = newNode;
 
-    return newNode;
+    return head;
 }
 
 Node* insertAtTail(Node*head, int val){
@@ -135,14 +135,14 @@ Node* insertAfterValue(Node* head, int target, int val){
 int main(){
     Node* head = nullptr;
 
-    // head = insertAtHead(head, 10);
-    // head = insertAtHead(head, 1);
+    head = insertAtHead(head, 10);
+    head = insertAtHead(head, 1);
     // head = insertAtHead(head, 2);
     // head = insertAtHead(head, 6);
     // // head = insertAtHead(head, 3);
     // head = insertAtTail(head, 122);
     // head = insertAtK(head, 5, 100);
-    head = insertBeforeValue(head, 100, 200);
+    // head = insertBeforeValue(head, 100, 200);
 
     printLL(head);
 }
